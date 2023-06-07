@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clgdemo-java-app-deployment
+  labels:
+    app: clgdemo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: clgdemo
+  template:
+    metadata:
+      labels:
+        app: clgdemo
+    spec:
+      containers:
+        - name: clogemo-app
+          image: vijaykrr/clgdemo:latest
+          ports:
+            - containerPort: 9999

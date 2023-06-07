@@ -1,0 +1,213 @@
+2023-05-24 13:25:03,238 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Starting ClgdemoApplication using Java 17.0.2 with PID 1692 (D:\2023\springbootsamples\3\clgdemo\target\classes started by vijay in D:\2023\springbootsamples\3\clgdemo)
+2023-05-24 13:25:03,244 DEBUG vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Running with Spring Boot v3.1.0, Spring v6.0.9
+2023-05-24 13:25:03,246 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-24 13:25:10,698 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Started ClgdemoApplication in 8.081 seconds (process running for 9.068)
+2023-05-24 13:41:52,852 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Starting ClgdemoApplication using Java 17.0.2 with PID 24780 (D:\2023\springbootsamples\3\clgdemo\target\classes started by vijay in D:\2023\springbootsamples\3\clgdemo)
+2023-05-24 13:41:52,853 DEBUG vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Running with Spring Boot v3.1.0, Spring v6.0.9
+2023-05-24 13:41:52,854 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-24 13:42:00,549 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Started ClgdemoApplication in 8.256 seconds (process running for 9.256)
+2023-05-24 13:43:25,692 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-3] DepartmentServiceImpl ..fetchDepartmentByID is calling ...3
+2023-05-24 13:43:25,725 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-3] department is ...Optional[Department(deptId=3, deptName=ECT, deptCode=CET-2022)]
+2023-05-24 13:45:14,703 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Starting ClgdemoApplication using Java 17.0.2 with PID 10868 (D:\2023\springbootsamples\3\clgdemo\target\classes started by vijay in D:\2023\springbootsamples\3\clgdemo)
+2023-05-24 13:45:14,706 DEBUG vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Running with Spring Boot v3.1.0, Spring v6.0.9
+2023-05-24 13:45:14,707 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-24 13:45:21,329 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Started ClgdemoApplication in 7.187 seconds (process running for 8.167)
+2023-05-24 13:45:48,624 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-4] DepartmentServiceImpl ..fetchDepartmentByID is calling ...3
+2023-05-24 13:45:48,722 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-4] department is ...Optional.empty
+2023-05-24 13:45:48,732 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9999-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: vj.com.demo.clg3.clgdemo.error.DepartmentNotFoundException: Department Not Available] with root cause
+vj.com.demo.clg3.clgdemo.error.DepartmentNotFoundException: Department Not Available
+	at vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl.fetchDepartmentByID(DepartmentServiceImpl.java:44)
+	at vj.com.demo.clg3.clgdemo.controller.DepartmentController.getDepartById(DepartmentController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-24 13:45:51,807 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-7] DepartmentServiceImpl ..fetchDepartmentByID is calling ...2
+2023-05-24 13:45:51,820 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-7] department is ...Optional[Department(deptId=2, deptName=CSE, deptCode=CSE-2022)]
+2023-05-24 13:46:20,715 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-6] DepartmentServiceImpl ..departmentId is  ...2...Department(deptId=null, deptName=CSE, deptCode=CSE-2021)
+2023-05-24 13:46:20,715 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-6] DepartmentServiceImpl ..departmentDb is  ...Department(deptId=2, deptName=CSE, deptCode=CSE-2022)
+2023-05-24 13:46:20,715 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-6] DepartmentServiceImpl ..name is  ...CSE
+2023-05-24 13:46:20,715 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-6] DepartmentServiceImpl ..getDeptCode is  ...CSE-2021
+2023-05-24 13:46:20,715 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-6] DepartmentServiceImpl.. oveall ..dept is  ...Department(deptId=null, deptName=CSE, deptCode=CSE-2021)
+2023-05-24 13:46:27,276 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-8] DepartmentServiceImpl ..fetchDepartmentByID is calling ...2
+2023-05-24 13:46:27,280 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-8] department is ...Optional[Department(deptId=2, deptName=CSE, deptCode=CSE-2021)]
+2023-05-24 13:53:10,070 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-3] DepartmentServiceImpl ..fetchDepartmentByID is calling ...2
+2023-05-24 13:53:10,073 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-3] department is ...Optional[Department(deptId=2, deptName=CSE, deptCode=CSE-2021)]
+2023-05-24 13:53:27,320 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-5] DepartmentServiceImpl ..fetchDepartmentByID is calling ...3
+2023-05-24 13:53:27,322 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-5] department is ...Optional.empty
+2023-05-24 13:53:27,324 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9999-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: vj.com.demo.clg3.clgdemo.error.DepartmentNotFoundException: Department Not Available] with root cause
+vj.com.demo.clg3.clgdemo.error.DepartmentNotFoundException: Department Not Available
+	at vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl.fetchDepartmentByID(DepartmentServiceImpl.java:44)
+	at vj.com.demo.clg3.clgdemo.controller.DepartmentController.getDepartById(DepartmentController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-24 13:59:59,580 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Starting ClgdemoApplication using Java 17.0.2 with PID 1540 (D:\2023\springbootsamples\3\clgdemo\target\classes started by vijay in D:\2023\springbootsamples\3\clgdemo)
+2023-05-24 13:59:59,584 DEBUG vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Running with Spring Boot v3.1.0, Spring v6.0.9
+2023-05-24 13:59:59,585 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-24 14:00:07,785 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Started ClgdemoApplication in 8.835 seconds (process running for 10.078)
+2023-05-24 14:01:27,165 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-9] DepartmentServiceImpl ..fetchDepartmentByID is calling ...4
+2023-05-24 14:01:27,180 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-9] department is ...Optional[Department(deptId=4, deptName=IT, deptCode=IT-2022)]
+2023-05-24 14:01:29,484 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-10] DepartmentServiceImpl ..fetchDepartmentByID is calling ...5
+2023-05-24 14:01:29,487 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-10] department is ...Optional.empty
+2023-05-24 14:04:14,120 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Starting ClgdemoApplication using Java 17.0.2 with PID 23284 (D:\2023\springbootsamples\3\clgdemo\target\classes started by vijay in D:\2023\springbootsamples\3\clgdemo)
+2023-05-24 14:04:14,121 DEBUG vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Running with Spring Boot v3.1.0, Spring v6.0.9
+2023-05-24 14:04:14,122 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-24 14:04:22,168 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Started ClgdemoApplication in 8.641 seconds (process running for 9.657)
+2023-05-24 14:04:47,308 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-6] DepartmentServiceImpl ..fetchDepartmentByID is calling ...2
+2023-05-24 14:04:47,341 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-6] department is ...Optional[Department(deptId=2, deptName=ECE, deptCode=ECE-2022)]
+2023-05-24 14:04:49,092 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-7] DepartmentServiceImpl ..fetchDepartmentByID is calling ...3
+2023-05-24 14:04:49,092 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-7] department is ...Optional.empty
+2023-05-24 14:13:45,583 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Starting ClgdemoApplication using Java 17.0.2 with PID 21836 (D:\2023\springbootsamples\3\clgdemo\target\classes started by vijay in D:\2023\springbootsamples\3\clgdemo)
+2023-05-24 14:13:45,584 DEBUG vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Running with Spring Boot v3.1.0, Spring v6.0.9
+2023-05-24 14:13:45,585 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-24 14:13:52,975 INFO vj.com.demo.clg3.clgdemo.ClgdemoApplication [restartedMain] Started ClgdemoApplication in 7.946 seconds (process running for 9.024)
+2023-05-24 14:13:56,266 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-2] DepartmentServiceImpl ..fetchDepartmentByID is calling ...3
+2023-05-24 14:13:56,416 INFO vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl [http-nio-9999-exec-2] department is ...Optional.empty
+2023-05-24 14:13:56,424 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9999-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: vj.com.demo.clg3.clgdemo.error.DepartmentNotFoundException: Department Not Available] with root cause
+vj.com.demo.clg3.clgdemo.error.DepartmentNotFoundException: Department Not Available
+	at vj.com.demo.clg3.clgdemo.service.DepartmentServiceImpl.fetchDepartmentByID(DepartmentServiceImpl.java:44)
+	at vj.com.demo.clg3.clgdemo.controller.DepartmentController.getDepartById(DepartmentController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
