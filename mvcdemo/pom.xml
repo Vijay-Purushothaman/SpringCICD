@@ -11,6 +11,7 @@
 	<groupId>vj.com.demo</groupId>
 	<artifactId>mvcdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>mvcdemo</name>
 	<description>MVC Demo project for Spring Boot CICD</description>
 	<properties>
