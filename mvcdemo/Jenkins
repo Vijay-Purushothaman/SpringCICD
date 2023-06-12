@@ -1,0 +1,47 @@
+pipeline {
+    agent any
+	environment {
+		SCRIPT_PATH = "D:\\2023\\Jenkins\\out\\j4"
+		FOO = "BAR"
+	}
+
+    stages {
+	    stage('git clone') {
+            steps {
+                echo 'Git'
+				dir("$SCRIPT_PATH") {
+					git 'https://github.com/Vijay-Purushothaman/SpringCICD.git'
+				}
+			}
+        }
+        stage('Build') {
+            steps {
+                echo 'Hello World'
+				echo "FOO is $FOO"
+				echo "$SCRIPT_PATH"
+				fileExists "$SCRIPT_PATH"
+				dir("$SCRIPT_PATH\\mvcdemo") {
+                    bat 'mvn -version'
+					bat '''mvn clean package -DskipTests'''
+					
+                }
+ 			}
+        }
+		stage('deploy') {
+            steps {
+				dir("$SCRIPT_PATH\\mvcdemo") {
+					bat 'mvn -version'
+                    deploy adapters: [tomcat7(credentialsId: 'tomcat7-Cred', path: '', url: 'http://localhost:5050/')], contextPath: 'mvcdemo', war: '**\\mvcdemo.war'
+					
+                }	
+                echo "deploying"
+				
+            }
+        }
+		stage('Test') {
+            steps {
+                echo "Testing"
+            }
+        }
+    }
+}
